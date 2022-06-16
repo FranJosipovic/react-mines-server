@@ -23,7 +23,7 @@ app.use(require('./routes/leaderboard'))
 
 
 app.get('/',(req,res)=>{
-  res.send({mssg:"server start"})
+  res.json({mssg:"server start"})
 })
 
 const PORT = process.env.PORT || 8000
