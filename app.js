@@ -20,6 +20,9 @@ require('./modals/leaderboardModal.js')
 
 app.use(express.json())
 app.use(require('./routes/leaderboard'))
+app.use("/",(req,res)=>{
+  res.json("server running")
+})
 
 const PORT = process.env.PORT || 8000
 
